@@ -53,7 +53,7 @@ public class SampleAtmosphereApplication {
 		registration.addInitParameter("org.atmosphere.cpr.packages", "sample");
 		registration.addInitParameter("org.atmosphere.interceptor.HeartbeatInterceptor"
 				+ ".clientHeartbeatFrequencyInSeconds", "10");
-		registration.setLoadOnStartup("0");
+		registration.setLoadOnStartup("0);
 		// Need to occur before the EmbeddedAtmosphereInitializer
 		registration.setOrder(Ordered.HIGHEST_PRECEDENCE);
 		return registration;
